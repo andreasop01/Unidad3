@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.hibernate.eclipse.launch.ConsoleConfigurationLaunchConfigurationType">
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="Prueba2Hibernate"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Prueba2Hibernate"/>
+    <stringAttribute key="org.hibernate.eclipse.launch.CFG_XML_FILE" value="\Prueba2Hibernate\src\main\java\hibernate.cfg.xml"/>
+    <stringAttribute key="org.hibernate.eclipse.launch.CONFIGURATION_FACTORY" value="CORE"/>
+    <listAttribute key="org.hibernate.eclipse.launch.FILE_MAPPINGS">
+        <listEntry value="/Prueba2Hibernate/src/main/java/datos/Departamentos.hbm.xml"/>
+        <listEntry value="/Prueba2Hibernate/src/main/java/datos/Empleados.hbm.xml"/>
+    </listAttribute>
+    <stringAttribute key="org.hibernate.eclipse.launch.HIBERNATE_VERSION" value="6.1"/>
+</launchConfiguration>
