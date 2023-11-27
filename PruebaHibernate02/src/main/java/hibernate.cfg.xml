@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.password">1234</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+        <property name="hibernate.connection.username">ANDREA</property>
+        <property name="hibernate.default_schema">ANDREA</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="hibernate.hbm2ddl.auto">none</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="datosCentros/TAccesos.hbm.xml"/>
+        <mapping resource="datosCentros/C1Profesores.hbm.xml"/>
+        <mapping resource="datosCentros/C1Especialidad.hbm.xml"/>
+        <mapping resource="datosCentros/Empleados.hbm.xml"/>
+        <mapping resource="datosCentros/Departamentos.hbm.xml"/>
+        <mapping resource="datosCentros/C1Asignaturas.hbm.xml"/>
+        <mapping resource="datosCentros/TLineaEstacion.hbm.xml"/>
+        <mapping resource="datosCentros/TTrenes.hbm.xml"/>
+        <mapping resource="datosCentros/TEstaciones.hbm.xml"/>
+        <mapping resource="datosCentros/C1Centros.hbm.xml"/>
+        <mapping resource="datosCentros/TLineas.hbm.xml"/>
+        <mapping resource="datosCentros/TCocheras.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

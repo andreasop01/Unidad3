@@ -15,5 +15,5 @@
         <listEntry value="/Prueba2Hibernate/src/main/java/datos/Departamentos.hbm.xml"/>
         <listEntry value="/Prueba2Hibernate/src/main/java/datos/Empleados.hbm.xml"/>
     </listAttribute>
-    <stringAttribute key="org.hibernate.eclipse.launch.HIBERNATE_VERSION" value="6.1"/>
+    <stringAttribute key="org.hibernate.eclipse.launch.HIBERNATE_VERSION" value="5.6"/>
 </launchConfiguration>
