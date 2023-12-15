@@ -12,11 +12,5 @@
         <property name="hibernate.hbm2ddl.auto">none</property>
         <property name="hibernate.search.autoregister_listeners">true</property>
         <property name="hibernate.validator.apply_to_ddl">false</property>
-        <mapping resource="datos2/C1Centros.hbm.xml"/>
-        <mapping resource="datos2/Departamentos.hbm.xml"/>
-        <mapping resource="datos2/C1Profesores.hbm.xml"/>
-        <mapping resource="datos2/Empleados.hbm.xml"/>
-        <mapping resource="datos2/C1Especialidad.hbm.xml"/>
-        <mapping resource="datos2/C1Asignaturas.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

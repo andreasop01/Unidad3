@@ -3,8 +3,6 @@
     <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
     <fullyQualifiedTypeName name="jakarta.transaction.Transaction"/>
     <fullyQualifiedTypeName name="datos.Departamentos"/>
-    <fullyQualifiedTypeName name="java.math.BigInteger"/>
-    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
     <fullyQualifiedTypeName name="jakarta.persistence.PersistenceException"/>
     <fullyQualifiedTypeName name="java.util.logging.LogManager"/>
     <fullyQualifiedTypeName name="java.util.logging.Logger"/>
@@ -17,4 +15,6 @@
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="datosCentros.TLineaEstacion"/>
     <fullyQualifiedTypeName name="datosCentros.TEstaciones"/>
+    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+    <fullyQualifiedTypeName name="java.math.BigInteger"/>
 </qualifiedTypeNameHistroy>

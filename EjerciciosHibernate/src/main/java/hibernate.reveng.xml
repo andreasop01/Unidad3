@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-schema="ANDREA" match-name=".*"/>
+  <table-filter match-schema="ANDREA" match-name="C1_ASIGNATURAS"/>
+  <table-filter match-schema="ANDREA" match-name="C1_ASIGPROF"/>
+  <table-filter match-schema="ANDREA" match-name="C1_CENTROS"/>
+  <table-filter match-schema="ANDREA" match-name="C1_ESPECIALIDAD"/>
+  <table-filter match-schema="ANDREA" match-name="C1_PROFESORES"/>
+  <table-filter match-schema="ANDREA" match-name="CLIENTES"/>
+  <table-filter match-schema="ANDREA" match-name="COMPRAS"/>
+  <table-filter match-schema="ANDREA" match-name="DETCOMPRAS"/>
+  <table-filter match-schema="ANDREA" match-name="PRODUCTOS"/>
+  <table-filter match-schema="ANDREA" match-name="T_ACCESOS"/>
+  <table-filter match-schema="ANDREA" match-name="T_COCHERAS"/>
+  <table-filter match-schema="ANDREA" match-name="T_ESTACIONES"/>
+  <table-filter match-schema="ANDREA" match-name="T_LINEAS"/>
+  <table-filter match-schema="ANDREA" match-name="T_LINEA_ESTACION"/>
+  <table-filter match-schema="ANDREA" match-name="T_NUEVOS_TRENES"/>
+  <table-filter match-schema="ANDREA" match-name="T_TRENES"/>
+</hibernate-reverse-engineering>

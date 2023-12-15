@@ -16,4 +16,5 @@
 	<table-filter match-name="T_LINEAS" match-schema="ANDREA"></table-filter>
 	<table-filter match-name="T_LINEA_ESTACION" match-schema="ANDREA"></table-filter>
 	<table-filter match-name="T_TRENES" match-schema="ANDREA"></table-filter>
+	<table-filter match-name="T_NUEVOS_TRENES" match-schema="ANDREA"></table-filter>
 </hibernate-reverse-engineering>
