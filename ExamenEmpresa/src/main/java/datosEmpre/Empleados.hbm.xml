@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 17 dic 2023 15:31:12 by Hibernate Tools 5.6.15.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="datosEmpre.Empleados" optimistic-lock="none" table="EMPLEADOS">
+        <id name="codemple" type="long">
+            <column name="CODEMPLE" precision="10" scale="0"/>
+            <generator class="assigned"/>
+        </id>
+        <many-to-one class="datosEmpre.Empleados" fetch="select" name="empleados">
+            <column name="CODENCARGADO" precision="10" scale="0"/>
+        </many-to-one>
+        <many-to-one class="datosEmpre.Departamentos" fetch="select" name="departamentos">
+            <column name="CODDEPART" not-null="true" precision="10" scale="0"/>
+        </many-to-one>
+        <many-to-one class="datosEmpre.Oficios" fetch="select" name="oficios">
+            <column name="CODOFICIO" not-null="true" precision="10" scale="0"/>
+        </many-to-one>
+        <property name="nombre" type="string">
+            <column length="35" name="NOMBRE" not-null="true"/>
+        </property>
+        <property name="direccion" type="string">
+            <column length="35" name="DIRECCION"/>
+        </property>
+        <property name="poblacion" type="string">
+            <column length="25" name="POBLACION"/>
+        </property>
+        <property name="fechaalta" type="date">
+            <column length="7" name="FECHAALTA"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="empleadoses" table="EMPLEADOS">
+            <key>
+                <column name="CODENCARGADO" precision="10" scale="0"/>
+            </key>
+            <one-to-many class="datosEmpre.Empleados"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="departamentoses" table="DEPARTAMENTOS">
+            <key>
+                <column name="CODJEFEDEPARTAMENTO" precision="10" scale="0"/>
+            </key>
+            <one-to-many class="datosEmpre.Departamentos"/>
+        </set>
+    </class>
+</hibernate-mapping>

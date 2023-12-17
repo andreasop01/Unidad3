@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 17 dic 2023 15:31:12 by Hibernate Tools 5.6.15.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="datosEmpre.Oficios" optimistic-lock="none" table="OFICIOS">
+        <id name="codoficio" type="long">
+            <column name="CODOFICIO" precision="10" scale="0"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="nombre" type="string">
+            <column length="30" name="NOMBRE" not-null="true"/>
+        </property>
+        <property name="salariomes" type="java.lang.Double">
+            <column name="SALARIOMES" precision="126" scale="0"/>
+        </property>
+        <property name="preciotrienio" type="java.lang.Double">
+            <column name="PRECIOTRIENIO" precision="126" scale="0"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="empleadoses" table="EMPLEADOS">
+            <key>
+                <column name="CODOFICIO" not-null="true" precision="10" scale="0"/>
+            </key>
+            <one-to-many class="datosEmpre.Empleados"/>
+        </set>
+    </class>
+</hibernate-mapping>
