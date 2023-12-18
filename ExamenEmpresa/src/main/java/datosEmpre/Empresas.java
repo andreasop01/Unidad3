@@ -1,5 +1,5 @@
 package datosEmpre;
-// Generated 17 dic 2023 15:31:12 by Hibernate Tools 5.6.15.Final
+// Generated 18 dic 2023 16:12:57 by Hibernate Tools 5.6.15.Final
 
 import java.util.HashSet;
 import java.util.Set;

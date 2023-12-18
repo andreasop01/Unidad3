@@ -30,13 +30,60 @@ public class PrincipalEmpre {
 		//ejercicio1(1);
 		//ejercicio2("hjfh","ddsgsd","jkdsghijk",1,11);
 		//ejercicio3();
-		ejercicio4(11,"fdgsdfg","dkhf","jhfsd",107,3);
+		//ejercicio4(11,"fdgsdfg","dkhf","jhfsd",107,3);
+		ejercicio5();
 		
 		sesion.close();
 	
 
 	}
 	
+	private static void ejercicio5() {
+		Session session = sesion.openSession();
+		Transaction tx = session.beginTransaction();
+		Query cons=session.createQuery("from Empresas",Empresas.class);
+		
+		int tPresupuestoA=0;
+		int tnEmple=0;
+		int tsumSala=0;
+		int tnuevoPre=0;
+		System.out.printf("%10s %-35s %-60s %15s %10s %10s %10s%n","Codigo-emp","Nombre","Direccion","Presup-Ant","Num-emples","Sum Salarios","Presup nuevo");
+		System.out.printf("%10s %-35s %-60s %15s %10s %10s %10s%n","----------","-----------------------------------","------------------------------------------------------------","---------------","----------","----------","----------");
+		
+		List<Empresas> listEmpre=cons.list();
+		for (Empresas emp : listEmpre) {
+			int nEmpleados=0;
+			int sumSalario=0;
+			
+			Set<Departamentos> listDepa=emp.getDepartamentoses();
+			for (Departamentos depa : listDepa) {
+				nEmpleados+=depa.getEmpleadoses().size();
+				
+				Set<Empleados> listaEmple=depa.getEmpleadoses();
+				for (Empleados emple : listaEmple) {
+					sumSalario+=emple.getOficios().getSalariomes();
+				}
+			}
+			
+			double nuevoPre=emp.getPresupuesto()+sumSalario;
+			tPresupuestoA+=emp.getPresupuesto();
+			tnEmple+=nEmpleados;
+			tsumSala+=sumSalario;
+			tnuevoPre+=nuevoPre;
+			System.out.printf("%10s %-35s %-60s %15s %10s %10s %10s%n",emp.getCodempre(),emp.getNombre(),emp.getDireccion(),emp.getPresupuesto(),nEmpleados,sumSalario,nuevoPre);
+			
+			emp.setPresupuesto(nuevoPre);
+			session.merge(emp);
+			
+		}
+		
+		System.out.printf("%10s %-35s %-60s %15s %10s %10s %10s%n","----------","-----------------------------------","------------------------------------------------------------","---------------","----------","----------","----------");
+		System.out.printf("%10s %-35s %-60s %15s %10s %10s %10s%n","TOTALES: ","","",tPresupuestoA,tnEmple,tsumSala,tnuevoPre);
+
+		tx.commit();
+		session.close();
+	}
+
 	private static void ejercicio4(int codDep, String nomDep, String direcDep, String locaDep, int codJefe, int codEmpresa) {
 		Session session = sesion.openSession();
 		Transaction tx = session.beginTransaction();

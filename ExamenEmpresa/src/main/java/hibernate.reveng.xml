@@ -2,9 +2,8 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
 
 <hibernate-reverse-engineering>
-  <table-filter match-schema="EMPRESA" match-name=".*"/>
-  <table-filter match-schema="EMPRESA" match-name="DEPARTAMENTOS"/>
-  <table-filter match-schema="EMPRESA" match-name="EMPLEADOS"/>
-  <table-filter match-schema="EMPRESA" match-name="EMPRESAS"/>
-  <table-filter match-schema="EMPRESA" match-name="OFICIOS"/>
+  <table-filter match-schema="ANDREA" match-name="DEPARTAMENTOS"/>
+  <table-filter match-schema="ANDREA" match-name="EMPLEADOS"/>
+  <table-filter match-schema="ANDREA" match-name="EMPRESAS"/>
+  <table-filter match-schema="ANDREA" match-name="OFICIOS"/>
 </hibernate-reverse-engineering>

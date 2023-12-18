@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="datosCentros.C1Asignaturas"/>
     <fullyQualifiedTypeName name="org.hibernate.Session"/>
     <fullyQualifiedTypeName name="datosCentros.TLineas"/>
-    <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="datosCentros.TLineaEstacion"/>
     <fullyQualifiedTypeName name="datosCentros.TEstaciones"/>
     <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
@@ -20,7 +19,8 @@
     <fullyQualifiedTypeName name="datosExamen.T3habitaciones"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="org.hibernate.query.Query"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
 </qualifiedTypeNameHistroy>

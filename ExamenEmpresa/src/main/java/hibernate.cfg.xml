@@ -6,8 +6,8 @@
         <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
         <property name="hibernate.connection.password">1234</property>
         <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
-        <property name="hibernate.connection.username">EMPRESA</property>
-        <property name="hibernate.default_schema">EMPRESA</property>
+        <property name="hibernate.connection.username">ANDREA</property>
+        <property name="hibernate.default_schema">ANDREA</property>
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
         <property name="hibernate.hbm2ddl.auto">none</property>
         <property name="hibernate.search.autoregister_listeners">true</property>
